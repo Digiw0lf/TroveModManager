@@ -1,0 +1,812 @@
+
+initialize
+
+Attempting to Connect to Trovesaurus...
+
+Successfully Downloaded Json file from Trovesaurus
+
+initialize
+
+Attempting to Connect to Trovesaurus...
+
+Successfully Downloaded Json file from Trovesaurus
+
+User choosing .zip file path
+
+User .zip path = C:\Users\Dan\Desktop\Simply-Dark.zip
+
+ModList Storage = C:\Users\Dan\documents\visual studio 2015\Projects\Trove Mod Manager\Trove Mod Manager\bin\Release\Modlist
+
+Simply-Dark has been extracted to ModList
+
+Created Directory : \fonts\override
+
+open-sans.semibold-italic.ttf in the override folder was deleted to be overwritten
+
+open-sans.semibold.ttf in the override folder was deleted to be overwritten
+
+OpenSans-Bold.ttf in the override folder was deleted to be overwritten
+
+OpenSans-BoldItalic.ttf in the override folder was deleted to be overwritten
+
+Copying open-sans.semibold-italic.ttf  to  \fonts\override\open-sans.semibold-italic.ttf
+
+Copy Complete : open-sans.semibold-italic.ttf
+
+Copying open-sans.semibold.ttf  to  \fonts\override\open-sans.semibold.ttf
+
+Copy Complete : open-sans.semibold.ttf
+
+Copying OpenSans-Bold.ttf  to  \fonts\override\OpenSans-Bold.ttf
+
+Copy Complete : OpenSans-Bold.ttf
+
+Copying OpenSans-BoldItalic.ttf  to  \fonts\override\OpenSans-BoldItalic.ttf
+
+Copy Complete : OpenSans-BoldItalic.ttf
+
+Created Directory : \ui\override
+
+ChaosChest.swf in the override folder was deleted to be overwritten
+
+CharCustomize.swf in the override folder was deleted to be overwritten
+
+CharSheet.swf in the override folder was deleted to be overwritten
+
+Chat.swf in the override folder was deleted to be overwritten
+
+Clubs.swf in the override folder was deleted to be overwritten
+
+CollectionConsumeResult.swf in the override folder was deleted to be overwritten
+
+Collections.swf in the override folder was deleted to be overwritten
+
+Crafting.swf in the override folder was deleted to be overwritten
+
+Dismantle.swf in the override folder was deleted to be overwritten
+
+DropPrompt.swf in the override folder was deleted to be overwritten
+
+EscapeWindow.swf in the override folder was deleted to be overwritten
+
+Forge.swf in the override folder was deleted to be overwritten
+
+FriendPicker.swf in the override folder was deleted to be overwritten
+
+FriendsList.swf in the override folder was deleted to be overwritten
+
+Hotbar.swf in the override folder was deleted to be overwritten
+
+InputPromptUI.swf in the override folder was deleted to be overwritten
+
+Inventory.swf in the override folder was deleted to be overwritten
+
+KiwiStore.swf in the override folder was deleted to be overwritten
+
+LikedWorlds.swf in the override folder was deleted to be overwritten
+
+LoginBonus.swf in the override folder was deleted to be overwritten
+
+MainMenu.swf in the override folder was deleted to be overwritten
+
+Map.swf in the override folder was deleted to be overwritten
+
+MessageDialog.swf in the override folder was deleted to be overwritten
+
+RecipeConsumePrompt.swf in the override folder was deleted to be overwritten
+
+Reticle.swf in the override folder was deleted to be overwritten
+
+Settings.swf in the override folder was deleted to be overwritten
+
+StarBar.swf in the override folder was deleted to be overwritten
+
+Trade.swf in the override folder was deleted to be overwritten
+
+Copying ChaosChest.swf  to  \ui\override\ChaosChest.swf
+
+Copy Complete : ChaosChest.swf
+
+Copying CharCustomize.swf  to  \ui\override\CharCustomize.swf
+
+Copy Complete : CharCustomize.swf
+
+Copying CharSheet.swf  to  \ui\override\CharSheet.swf
+
+Copy Complete : CharSheet.swf
+
+Copying Chat.swf  to  \ui\override\Chat.swf
+
+Copy Complete : Chat.swf
+
+Copying Clubs.swf  to  \ui\override\Clubs.swf
+
+Copy Complete : Clubs.swf
+
+Copying CollectionConsumeResult.swf  to  \ui\override\CollectionConsumeResult.swf
+
+Copy Complete : CollectionConsumeResult.swf
+
+Copying Collections.swf  to  \ui\override\Collections.swf
+
+Copy Complete : Collections.swf
+
+Copying Crafting.swf  to  \ui\override\Crafting.swf
+
+Copy Complete : Crafting.swf
+
+Copying Dismantle.swf  to  \ui\override\Dismantle.swf
+
+Copy Complete : Dismantle.swf
+
+Copying DropPrompt.swf  to  \ui\override\DropPrompt.swf
+
+Copy Complete : DropPrompt.swf
+
+Copying EscapeWindow.swf  to  \ui\override\EscapeWindow.swf
+
+Copy Complete : EscapeWindow.swf
+
+Copying Forge.swf  to  \ui\override\Forge.swf
+
+Copy Complete : Forge.swf
+
+Copying FriendPicker.swf  to  \ui\override\FriendPicker.swf
+
+Copy Complete : FriendPicker.swf
+
+Copying FriendsList.swf  to  \ui\override\FriendsList.swf
+
+Copy Complete : FriendsList.swf
+
+Copying Hotbar.swf  to  \ui\override\Hotbar.swf
+
+Copy Complete : Hotbar.swf
+
+Copying InputPromptUI.swf  to  \ui\override\InputPromptUI.swf
+
+Copy Complete : InputPromptUI.swf
+
+Copying Inventory.swf  to  \ui\override\Inventory.swf
+
+Copy Complete : Inventory.swf
+
+Copying KiwiStore.swf  to  \ui\override\KiwiStore.swf
+
+Copy Complete : KiwiStore.swf
+
+Copying LikedWorlds.swf  to  \ui\override\LikedWorlds.swf
+
+Copy Complete : LikedWorlds.swf
+
+Copying LoginBonus.swf  to  \ui\override\LoginBonus.swf
+
+Copy Complete : LoginBonus.swf
+
+Copying MainMenu.swf  to  \ui\override\MainMenu.swf
+
+Copy Complete : MainMenu.swf
+
+Copying Map.swf  to  \ui\override\Map.swf
+
+Copy Complete : Map.swf
+
+Copying MessageDialog.swf  to  \ui\override\MessageDialog.swf
+
+Copy Complete : MessageDialog.swf
+
+Copying RecipeConsumePrompt.swf  to  \ui\override\RecipeConsumePrompt.swf
+
+Copy Complete : RecipeConsumePrompt.swf
+
+Copying Reticle.swf  to  \ui\override\Reticle.swf
+
+Copy Complete : Reticle.swf
+
+Copying Settings.swf  to  \ui\override\Settings.swf
+
+Copy Complete : Settings.swf
+
+Copying StarBar.swf  to  \ui\override\StarBar.swf
+
+Copy Complete : StarBar.swf
+
+Copying Trade.swf  to  \ui\override\Trade.swf
+
+Copy Complete : Trade.swf
+
+open-sans.semibold-italic.ttf in the override folder was deleted
+
+open-sans.semibold.ttf in the override folder was deleted
+
+OpenSans-Bold.ttf in the override folder was deleted
+
+OpenSans-BoldItalic.ttf in the override folder was deleted
+
+ChaosChest.swf in the override folder was deleted
+
+CharCustomize.swf in the override folder was deleted
+
+CharSheet.swf in the override folder was deleted
+
+Chat.swf in the override folder was deleted
+
+Clubs.swf in the override folder was deleted
+
+CollectionConsumeResult.swf in the override folder was deleted
+
+Collections.swf in the override folder was deleted
+
+Crafting.swf in the override folder was deleted
+
+Dismantle.swf in the override folder was deleted
+
+DropPrompt.swf in the override folder was deleted
+
+EscapeWindow.swf in the override folder was deleted
+
+Forge.swf in the override folder was deleted
+
+FriendPicker.swf in the override folder was deleted
+
+FriendsList.swf in the override folder was deleted
+
+Hotbar.swf in the override folder was deleted
+
+InputPromptUI.swf in the override folder was deleted
+
+Inventory.swf in the override folder was deleted
+
+KiwiStore.swf in the override folder was deleted
+
+LikedWorlds.swf in the override folder was deleted
+
+LoginBonus.swf in the override folder was deleted
+
+MainMenu.swf in the override folder was deleted
+
+Map.swf in the override folder was deleted
+
+MessageDialog.swf in the override folder was deleted
+
+RecipeConsumePrompt.swf in the override folder was deleted
+
+Reticle.swf in the override folder was deleted
+
+Settings.swf in the override folder was deleted
+
+StarBar.swf in the override folder was deleted
+
+Trade.swf in the override folder was deleted
+
+Checking for Steam Client Live Folder...
+
+[STEAM] Searching Directories for Live Folder...
+
+Directory chosen : C:\
+
+Live Folder found at : C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live
+
+[STEAM] Searching Directories for Live Folder...
+
+No Live folder found in D:\
+
+ModLoader.txt was found; overwriting. [DELETE]
+
+ModLoader.txt was found; overwriting. [CREATING]
+
+Live folder path found and recorded in ModLoader.txt
+
+User choosing .zip file path
+
+User .zip path = C:\Users\Dan\Desktop\Simply-Dark.zip
+
+ModList Storage = C:\Users\Dan\documents\visual studio 2015\Projects\Trove Mod Manager\Trove Mod Manager\bin\Release\Modlist
+
+Simply-Dark has been extracted to ModList
+
+Created Directory : C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\fonts\override
+
+open-sans.semibold-italic.ttf in the override folder was deleted to be overwritten
+
+open-sans.semibold.ttf in the override folder was deleted to be overwritten
+
+OpenSans-Bold.ttf in the override folder was deleted to be overwritten
+
+OpenSans-BoldItalic.ttf in the override folder was deleted to be overwritten
+
+Copying open-sans.semibold-italic.ttf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\fonts\override\open-sans.semibold-italic.ttf
+
+Copy Complete : open-sans.semibold-italic.ttf
+
+Copying open-sans.semibold.ttf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\fonts\override\open-sans.semibold.ttf
+
+Copy Complete : open-sans.semibold.ttf
+
+Copying OpenSans-Bold.ttf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\fonts\override\OpenSans-Bold.ttf
+
+Copy Complete : OpenSans-Bold.ttf
+
+Copying OpenSans-BoldItalic.ttf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\fonts\override\OpenSans-BoldItalic.ttf
+
+Copy Complete : OpenSans-BoldItalic.ttf
+
+ChaosChest.swf in the override folder was deleted to be overwritten
+
+CharCustomize.swf in the override folder was deleted to be overwritten
+
+CharSheet.swf in the override folder was deleted to be overwritten
+
+Chat.swf in the override folder was deleted to be overwritten
+
+Clubs.swf in the override folder was deleted to be overwritten
+
+CollectionConsumeResult.swf in the override folder was deleted to be overwritten
+
+Collections.swf in the override folder was deleted to be overwritten
+
+Crafting.swf in the override folder was deleted to be overwritten
+
+Dismantle.swf in the override folder was deleted to be overwritten
+
+DropPrompt.swf in the override folder was deleted to be overwritten
+
+EscapeWindow.swf in the override folder was deleted to be overwritten
+
+Forge.swf in the override folder was deleted to be overwritten
+
+FriendPicker.swf in the override folder was deleted to be overwritten
+
+FriendsList.swf in the override folder was deleted to be overwritten
+
+Hotbar.swf in the override folder was deleted to be overwritten
+
+InputPromptUI.swf in the override folder was deleted to be overwritten
+
+Inventory.swf in the override folder was deleted to be overwritten
+
+KiwiStore.swf in the override folder was deleted to be overwritten
+
+LikedWorlds.swf in the override folder was deleted to be overwritten
+
+LoginBonus.swf in the override folder was deleted to be overwritten
+
+MainMenu.swf in the override folder was deleted to be overwritten
+
+Map.swf in the override folder was deleted to be overwritten
+
+MessageDialog.swf in the override folder was deleted to be overwritten
+
+RecipeConsumePrompt.swf in the override folder was deleted to be overwritten
+
+Reticle.swf in the override folder was deleted to be overwritten
+
+Settings.swf in the override folder was deleted to be overwritten
+
+StarBar.swf in the override folder was deleted to be overwritten
+
+Trade.swf in the override folder was deleted to be overwritten
+
+Copying ChaosChest.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\ChaosChest.swf
+
+Copy Complete : ChaosChest.swf
+
+Copying CharCustomize.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\CharCustomize.swf
+
+Copy Complete : CharCustomize.swf
+
+Copying CharSheet.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\CharSheet.swf
+
+Copy Complete : CharSheet.swf
+
+Copying Chat.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Chat.swf
+
+Copy Complete : Chat.swf
+
+Copying Clubs.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Clubs.swf
+
+Copy Complete : Clubs.swf
+
+Copying CollectionConsumeResult.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\CollectionConsumeResult.swf
+
+Copy Complete : CollectionConsumeResult.swf
+
+Copying Collections.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Collections.swf
+
+Copy Complete : Collections.swf
+
+Copying Crafting.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Crafting.swf
+
+Copy Complete : Crafting.swf
+
+Copying Dismantle.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Dismantle.swf
+
+Copy Complete : Dismantle.swf
+
+Copying DropPrompt.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\DropPrompt.swf
+
+Copy Complete : DropPrompt.swf
+
+Copying EscapeWindow.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\EscapeWindow.swf
+
+Copy Complete : EscapeWindow.swf
+
+Copying Forge.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Forge.swf
+
+Copy Complete : Forge.swf
+
+Copying FriendPicker.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\FriendPicker.swf
+
+Copy Complete : FriendPicker.swf
+
+Copying FriendsList.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\FriendsList.swf
+
+Copy Complete : FriendsList.swf
+
+Copying Hotbar.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Hotbar.swf
+
+Copy Complete : Hotbar.swf
+
+Copying InputPromptUI.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\InputPromptUI.swf
+
+Copy Complete : InputPromptUI.swf
+
+Copying Inventory.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Inventory.swf
+
+Copy Complete : Inventory.swf
+
+Copying KiwiStore.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\KiwiStore.swf
+
+Copy Complete : KiwiStore.swf
+
+Copying LikedWorlds.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\LikedWorlds.swf
+
+Copy Complete : LikedWorlds.swf
+
+Copying LoginBonus.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\LoginBonus.swf
+
+Copy Complete : LoginBonus.swf
+
+Copying MainMenu.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\MainMenu.swf
+
+Copy Complete : MainMenu.swf
+
+Copying Map.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Map.swf
+
+Copy Complete : Map.swf
+
+Copying MessageDialog.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\MessageDialog.swf
+
+Copy Complete : MessageDialog.swf
+
+Copying RecipeConsumePrompt.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\RecipeConsumePrompt.swf
+
+Copy Complete : RecipeConsumePrompt.swf
+
+Copying Reticle.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Reticle.swf
+
+Copy Complete : Reticle.swf
+
+Copying Settings.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Settings.swf
+
+Copy Complete : Settings.swf
+
+Copying StarBar.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\StarBar.swf
+
+Copy Complete : StarBar.swf
+
+Copying Trade.swf  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\ui\override\Trade.swf
+
+Copy Complete : Trade.swf
+
+open-sans.semibold-italic.ttf in the override folder was deleted
+
+open-sans.semibold.ttf in the override folder was deleted
+
+OpenSans-Bold.ttf in the override folder was deleted
+
+OpenSans-BoldItalic.ttf in the override folder was deleted
+
+ChaosChest.swf in the override folder was deleted
+
+CharCustomize.swf in the override folder was deleted
+
+CharSheet.swf in the override folder was deleted
+
+Chat.swf in the override folder was deleted
+
+Clubs.swf in the override folder was deleted
+
+CollectionConsumeResult.swf in the override folder was deleted
+
+Collections.swf in the override folder was deleted
+
+Crafting.swf in the override folder was deleted
+
+Dismantle.swf in the override folder was deleted
+
+DropPrompt.swf in the override folder was deleted
+
+EscapeWindow.swf in the override folder was deleted
+
+Forge.swf in the override folder was deleted
+
+FriendPicker.swf in the override folder was deleted
+
+FriendsList.swf in the override folder was deleted
+
+Hotbar.swf in the override folder was deleted
+
+InputPromptUI.swf in the override folder was deleted
+
+Inventory.swf in the override folder was deleted
+
+KiwiStore.swf in the override folder was deleted
+
+LikedWorlds.swf in the override folder was deleted
+
+LoginBonus.swf in the override folder was deleted
+
+MainMenu.swf in the override folder was deleted
+
+Map.swf in the override folder was deleted
+
+MessageDialog.swf in the override folder was deleted
+
+RecipeConsumePrompt.swf in the override folder was deleted
+
+Reticle.swf in the override folder was deleted
+
+Settings.swf in the override folder was deleted
+
+StarBar.swf in the override folder was deleted
+
+Trade.swf in the override folder was deleted
+
+initialize
+
+Attempting to Connect to Trovesaurus...
+
+Successfully Downloaded Json file from Trovesaurus
+
+-----------------
+
+Application Close
+
+-----------------
+
+initialize
+
+Attempting to Connect to Trovesaurus...
+
+Successfully Downloaded Json file from Trovesaurus
+
+-----------------
+
+Application Close
+
+-----------------
+
+initialize
+
+Attempting to Connect to Trovesaurus...
+
+Successfully Downloaded Json file from Trovesaurus
+
+-----------------
+
+Application Close
+
+-----------------
+
+initialize
+
+Attempting to Connect to Trovesaurus...
+
+Successfully Downloaded Json file from Trovesaurus
+
+User choosing .zip file path
+
+User .zip path = C:\Users\Dan\Documents\_MODS\Sinisterra, Carrier of Pandas_1_3.zip
+
+ModList Storage = C:\Users\Dan\documents\visual studio 2015\Projects\Trove Mod Manager\Trove Mod Manager\bin\Release\Modlist
+
+Sinisterra, Carrier of Pandas_1_3 has been extracted to ModList
+
+c_mt_dragon_winter_2015_body_01.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_body_02.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_body_03.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_body_04.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_body_05.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_body_06.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_body_07.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_body_07_elder.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_foot_bl.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_foot_br.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_foot_fl.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_foot_fr.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_head_02.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_head_elder.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_jaw_02.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_jaw_elder.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_shoulder_bl.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_shoulder_br.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_shoulder_fl.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_shoulder_fr.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_wing_l_01.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_wing_l_02.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_wing_r_01.blueprint in the override folder was deleted to be overwritten
+
+c_mt_dragon_winter_2015_wing_r_02.blueprint in the override folder was deleted to be overwritten
+
+Copying c_mt_dragon_winter_2015_body_01.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_01.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_01.blueprint
+
+Copying c_mt_dragon_winter_2015_body_02.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_02.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_02.blueprint
+
+Copying c_mt_dragon_winter_2015_body_03.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_03.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_03.blueprint
+
+Copying c_mt_dragon_winter_2015_body_04.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_04.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_04.blueprint
+
+Copying c_mt_dragon_winter_2015_body_05.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_05.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_05.blueprint
+
+Copying c_mt_dragon_winter_2015_body_06.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_06.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_06.blueprint
+
+Copying c_mt_dragon_winter_2015_body_07.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_07.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_07.blueprint
+
+Copying c_mt_dragon_winter_2015_body_07_elder.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_body_07_elder.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_body_07_elder.blueprint
+
+Copying c_mt_dragon_winter_2015_foot_bl.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_foot_bl.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_foot_bl.blueprint
+
+Copying c_mt_dragon_winter_2015_foot_br.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_foot_br.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_foot_br.blueprint
+
+Copying c_mt_dragon_winter_2015_foot_fl.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_foot_fl.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_foot_fl.blueprint
+
+Copying c_mt_dragon_winter_2015_foot_fr.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_foot_fr.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_foot_fr.blueprint
+
+Copying c_mt_dragon_winter_2015_head_02.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_head_02.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_head_02.blueprint
+
+Copying c_mt_dragon_winter_2015_head_elder.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_head_elder.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_head_elder.blueprint
+
+Copying c_mt_dragon_winter_2015_jaw_02.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_jaw_02.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_jaw_02.blueprint
+
+Copying c_mt_dragon_winter_2015_jaw_elder.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_jaw_elder.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_jaw_elder.blueprint
+
+Copying c_mt_dragon_winter_2015_shoulder_bl.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_shoulder_bl.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_shoulder_bl.blueprint
+
+Copying c_mt_dragon_winter_2015_shoulder_br.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_shoulder_br.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_shoulder_br.blueprint
+
+Copying c_mt_dragon_winter_2015_shoulder_fl.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_shoulder_fl.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_shoulder_fl.blueprint
+
+Copying c_mt_dragon_winter_2015_shoulder_fr.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_shoulder_fr.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_shoulder_fr.blueprint
+
+Copying c_mt_dragon_winter_2015_wing_l_01.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_wing_l_01.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_wing_l_01.blueprint
+
+Copying c_mt_dragon_winter_2015_wing_l_02.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_wing_l_02.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_wing_l_02.blueprint
+
+Copying c_mt_dragon_winter_2015_wing_r_01.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_wing_r_01.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_wing_r_01.blueprint
+
+Copying c_mt_dragon_winter_2015_wing_r_02.blueprint  to  C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live\Blueprints\override\c_mt_dragon_winter_2015_wing_r_02.blueprint
+
+Copy Complete : c_mt_dragon_winter_2015_wing_r_02.blueprint
+
+c_mt_dragon_winter_2015_body_01.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_body_02.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_body_03.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_body_04.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_body_05.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_body_06.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_body_07.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_body_07_elder.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_foot_bl.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_foot_br.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_foot_fl.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_foot_fr.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_head_02.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_head_elder.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_jaw_02.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_jaw_elder.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_shoulder_bl.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_shoulder_br.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_shoulder_fl.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_shoulder_fr.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_wing_l_01.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_wing_l_02.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_wing_r_01.blueprint in the override folder was deleted
+
+c_mt_dragon_winter_2015_wing_r_02.blueprint in the override folder was deleted
+
+-----------------
+
+Application Close
+
+-----------------

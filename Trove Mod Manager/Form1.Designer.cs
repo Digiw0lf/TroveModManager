@@ -52,21 +52,35 @@
             this.extractFileArchives = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sortRecent = new System.Windows.Forms.RadioButton();
+            this.sortAlph = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.searchModBox = new System.Windows.Forms.RichTextBox();
+            this.searchModButton_ = new System.Windows.Forms.Button();
+            this.subFilterBox = new System.Windows.Forms.ComboBox();
+            this.filterBox = new System.Windows.Forms.ListBox();
             this.modSearchNames = new System.Windows.Forms.ListBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.modSearchedStatus = new System.Windows.Forms.Label();
+            this.searchedModReplaces = new System.Windows.Forms.Label();
+            this.searchedModDLNum = new System.Windows.Forms.Label();
+            this.searchedModSubtype = new System.Windows.Forms.Label();
+            this.searchedModType = new System.Windows.Forms.Label();
+            this.searchedModAuthor = new System.Windows.Forms.Label();
+            this.searchedModName_ = new System.Windows.Forms.Label();
+            this.modPicture = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.viewModToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchModButton_ = new System.Windows.Forms.Button();
-            this.filterBox = new System.Windows.Forms.ListBox();
-            this.viewMod = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.clearMods = new System.Windows.Forms.Button();
             this.feedBackThing = new System.Windows.Forms.RichTextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.clearMods = new System.Windows.Forms.Button();
+            this.removeMod = new System.Windows.Forms.Button();
             this.feedbackMyMods = new System.Windows.Forms.RichTextBox();
             this.checkT = new System.Windows.Forms.TextBox();
-            this.removeMod = new System.Windows.Forms.Button();
             this.modList = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.setupTextBox = new System.Windows.Forms.RichTextBox();
@@ -78,15 +92,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.rotatingCircle = new System.Windows.Forms.PictureBox();
             this.Feedback.SuspendLayout();
             this.modCreationTools.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.modPicture)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rotatingCircle)).BeginInit();
             this.SuspendLayout();
             // 
             // zipFileUser
@@ -100,10 +119,10 @@
             this.Feedback.Controls.Add(this.feedbackTxt);
             this.Feedback.Controls.Add(this.feedbackPageText);
             this.Feedback.Controls.Add(this.sendMailButton);
-            this.Feedback.Location = new System.Drawing.Point(4, 31);
+            this.Feedback.Location = new System.Drawing.Point(4, 34);
             this.Feedback.Name = "Feedback";
             this.Feedback.Padding = new System.Windows.Forms.Padding(3);
-            this.Feedback.Size = new System.Drawing.Size(1493, 614);
+            this.Feedback.Size = new System.Drawing.Size(1493, 611);
             this.Feedback.TabIndex = 4;
             this.Feedback.Text = "Feedback";
             // 
@@ -163,11 +182,11 @@
             this.modCreationTools.Controls.Add(this.label3);
             this.modCreationTools.Controls.Add(this.extractFileArchives);
             this.modCreationTools.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modCreationTools.Location = new System.Drawing.Point(4, 31);
+            this.modCreationTools.Location = new System.Drawing.Point(4, 34);
             this.modCreationTools.Margin = new System.Windows.Forms.Padding(0);
             this.modCreationTools.Name = "modCreationTools";
             this.modCreationTools.Padding = new System.Windows.Forms.Padding(3);
-            this.modCreationTools.Size = new System.Drawing.Size(1493, 614);
+            this.modCreationTools.Size = new System.Drawing.Size(1493, 611);
             this.modCreationTools.TabIndex = 3;
             this.modCreationTools.Text = "Mod Creation Tools";
             // 
@@ -196,7 +215,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label5.Location = new System.Drawing.Point(596, 99);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(249, 25);
@@ -248,7 +267,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label4.Location = new System.Drawing.Point(57, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 25);
@@ -287,22 +306,20 @@
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.flowLayoutPanel1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 31);
+            this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1493, 614);
+            this.tabPage3.Size = new System.Drawing.Size(1493, 611);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Search for Mods";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Controls.Add(this.searchModBox);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox1);
             this.flowLayoutPanel1.Controls.Add(this.modSearchNames);
-            this.flowLayoutPanel1.Controls.Add(this.searchModButton_);
-            this.flowLayoutPanel1.Controls.Add(this.filterBox);
-            this.flowLayoutPanel1.Controls.Add(this.viewMod);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(25, 24);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -310,16 +327,75 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1438, 559);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.sortRecent);
+            this.groupBox1.Controls.Add(this.sortAlph);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.searchModBox);
+            this.groupBox1.Controls.Add(this.searchModButton_);
+            this.groupBox1.Controls.Add(this.subFilterBox);
+            this.groupBox1.Controls.Add(this.filterBox);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.groupBox1.Location = new System.Drawing.Point(15, 15);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(289, 536);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Search Options";
+            // 
+            // sortRecent
+            // 
+            this.sortRecent.AutoSize = true;
+            this.sortRecent.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortRecent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.sortRecent.Location = new System.Drawing.Point(180, 371);
+            this.sortRecent.Name = "sortRecent";
+            this.sortRecent.Size = new System.Drawing.Size(96, 29);
+            this.sortRecent.TabIndex = 8;
+            this.sortRecent.TabStop = true;
+            this.sortRecent.Text = "Recent";
+            this.sortRecent.UseVisualStyleBackColor = true;
+            this.sortRecent.CheckedChanged += new System.EventHandler(this.sortRecent_CheckedChanged);
+            // 
+            // sortAlph
+            // 
+            this.sortAlph.AutoSize = true;
+            this.sortAlph.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortAlph.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.sortAlph.Location = new System.Drawing.Point(12, 371);
+            this.sortAlph.Name = "sortAlph";
+            this.sortAlph.Size = new System.Drawing.Size(150, 29);
+            this.sortAlph.TabIndex = 7;
+            this.sortAlph.TabStop = true;
+            this.sortAlph.Text = "Alphabetical";
+            this.sortAlph.UseVisualStyleBackColor = true;
+            this.sortAlph.CheckedChanged += new System.EventHandler(this.sortAlph_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label6.Location = new System.Drawing.Point(7, 71);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 25);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Type :";
+            // 
             // searchModBox
             // 
             this.searchModBox.BackColor = System.Drawing.SystemColors.Window;
             this.searchModBox.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchModBox.Location = new System.Drawing.Point(22, 22);
-            this.searchModBox.Margin = new System.Windows.Forms.Padding(10, 10, 10, 20);
+            this.searchModBox.Location = new System.Drawing.Point(12, 26);
+            this.searchModBox.Margin = new System.Windows.Forms.Padding(10, 10, 10, 15);
             this.searchModBox.Multiline = false;
             this.searchModBox.Name = "searchModBox";
             this.searchModBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.searchModBox.Size = new System.Drawing.Size(1108, 36);
+            this.searchModBox.Size = new System.Drawing.Size(264, 36);
             this.searchModBox.TabIndex = 2;
             this.searchModBox.Text = "Search For a Name...";
             this.searchModBox.WordWrap = false;
@@ -328,20 +404,172 @@
             this.searchModBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchModBox_KeyDown);
             this.searchModBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchModBox_KeyPress);
             // 
+            // searchModButton_
+            // 
+            this.searchModButton_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.searchModButton_.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchModButton_.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchModButton_.ForeColor = System.Drawing.Color.Black;
+            this.searchModButton_.Location = new System.Drawing.Point(12, 463);
+            this.searchModButton_.Margin = new System.Windows.Forms.Padding(10, 10, 10, 15);
+            this.searchModButton_.Name = "searchModButton_";
+            this.searchModButton_.Size = new System.Drawing.Size(264, 49);
+            this.searchModButton_.TabIndex = 3;
+            this.searchModButton_.Text = "Search";
+            this.searchModButton_.UseVisualStyleBackColor = false;
+            this.searchModButton_.Click += new System.EventHandler(this.searchModButton__Click);
+            // 
+            // subFilterBox
+            // 
+            this.subFilterBox.FormattingEnabled = true;
+            this.subFilterBox.Location = new System.Drawing.Point(12, 408);
+            this.subFilterBox.Margin = new System.Windows.Forms.Padding(10, 10, 10, 15);
+            this.subFilterBox.Name = "subFilterBox";
+            this.subFilterBox.Size = new System.Drawing.Size(264, 33);
+            this.subFilterBox.TabIndex = 5;
+            // 
+            // filterBox
+            // 
+            this.filterBox.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterBox.FormattingEnabled = true;
+            this.filterBox.ItemHeight = 25;
+            this.filterBox.Location = new System.Drawing.Point(12, 97);
+            this.filterBox.Margin = new System.Windows.Forms.Padding(10);
+            this.filterBox.Name = "filterBox";
+            this.filterBox.Size = new System.Drawing.Size(264, 279);
+            this.filterBox.TabIndex = 4;
+            this.filterBox.SelectedIndexChanged += new System.EventHandler(this.filterBox_SelectedIndexChanged);
+            // 
             // modSearchNames
             // 
-            this.modSearchNames.BackColor = System.Drawing.SystemColors.Window;
-            this.modSearchNames.ContextMenuStrip = this.contextMenuStrip1;
             this.modSearchNames.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modSearchNames.FormattingEnabled = true;
             this.modSearchNames.ItemHeight = 25;
-            this.modSearchNames.Location = new System.Drawing.Point(22, 88);
-            this.modSearchNames.Margin = new System.Windows.Forms.Padding(10);
+            this.modSearchNames.Location = new System.Drawing.Point(337, 22);
+            this.modSearchNames.Margin = new System.Windows.Forms.Padding(30, 10, 30, 10);
             this.modSearchNames.Name = "modSearchNames";
-            this.modSearchNames.Size = new System.Drawing.Size(1108, 429);
-            this.modSearchNames.TabIndex = 0;
+            this.modSearchNames.Size = new System.Drawing.Size(637, 529);
+            this.modSearchNames.TabIndex = 9;
             this.modSearchNames.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
-            this.modSearchNames.MouseHover += new System.EventHandler(this.modSearchNames_MouseHover);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rotatingCircle);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.modSearchedStatus);
+            this.groupBox2.Controls.Add(this.searchedModReplaces);
+            this.groupBox2.Controls.Add(this.searchedModDLNum);
+            this.groupBox2.Controls.Add(this.searchedModSubtype);
+            this.groupBox2.Controls.Add(this.searchedModType);
+            this.groupBox2.Controls.Add(this.searchedModAuthor);
+            this.groupBox2.Controls.Add(this.searchedModName_);
+            this.groupBox2.Controls.Add(this.modPicture);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.groupBox2.Location = new System.Drawing.Point(1007, 15);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(417, 536);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Mod Information";
+            // 
+            // button5
+            // 
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(6, 431);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(405, 99);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "Download and Install";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_2);
+            // 
+            // modSearchedStatus
+            // 
+            this.modSearchedStatus.AutoSize = true;
+            this.modSearchedStatus.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modSearchedStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.modSearchedStatus.Location = new System.Drawing.Point(1, 399);
+            this.modSearchedStatus.Name = "modSearchedStatus";
+            this.modSearchedStatus.Size = new System.Drawing.Size(72, 28);
+            this.modSearchedStatus.TabIndex = 7;
+            this.modSearchedStatus.Text = "Status";
+            // 
+            // searchedModReplaces
+            // 
+            this.searchedModReplaces.AutoSize = true;
+            this.searchedModReplaces.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchedModReplaces.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.searchedModReplaces.Location = new System.Drawing.Point(1, 343);
+            this.searchedModReplaces.Name = "searchedModReplaces";
+            this.searchedModReplaces.Size = new System.Drawing.Size(107, 28);
+            this.searchedModReplaces.TabIndex = 6;
+            this.searchedModReplaces.Text = "Replaces :";
+            // 
+            // searchedModDLNum
+            // 
+            this.searchedModDLNum.AutoSize = true;
+            this.searchedModDLNum.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchedModDLNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.searchedModDLNum.Location = new System.Drawing.Point(1, 371);
+            this.searchedModDLNum.Name = "searchedModDLNum";
+            this.searchedModDLNum.Size = new System.Drawing.Size(129, 28);
+            this.searchedModDLNum.TabIndex = 5;
+            this.searchedModDLNum.Text = "Download #";
+            // 
+            // searchedModSubtype
+            // 
+            this.searchedModSubtype.AutoSize = true;
+            this.searchedModSubtype.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchedModSubtype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.searchedModSubtype.Location = new System.Drawing.Point(1, 315);
+            this.searchedModSubtype.Name = "searchedModSubtype";
+            this.searchedModSubtype.Size = new System.Drawing.Size(55, 28);
+            this.searchedModSubtype.TabIndex = 4;
+            this.searchedModSubtype.Text = "For :";
+            // 
+            // searchedModType
+            // 
+            this.searchedModType.AutoSize = true;
+            this.searchedModType.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchedModType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.searchedModType.Location = new System.Drawing.Point(1, 287);
+            this.searchedModType.Name = "searchedModType";
+            this.searchedModType.Size = new System.Drawing.Size(69, 28);
+            this.searchedModType.TabIndex = 3;
+            this.searchedModType.Text = "Type :";
+            // 
+            // searchedModAuthor
+            // 
+            this.searchedModAuthor.AutoSize = true;
+            this.searchedModAuthor.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchedModAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.searchedModAuthor.Location = new System.Drawing.Point(1, 259);
+            this.searchedModAuthor.Name = "searchedModAuthor";
+            this.searchedModAuthor.Size = new System.Drawing.Size(117, 28);
+            this.searchedModAuthor.TabIndex = 2;
+            this.searchedModAuthor.Text = "Created by";
+            // 
+            // searchedModName_
+            // 
+            this.searchedModName_.AutoSize = true;
+            this.searchedModName_.BackColor = System.Drawing.Color.Transparent;
+            this.searchedModName_.Font = new System.Drawing.Font("Segoe UI Symbol", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchedModName_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.searchedModName_.Location = new System.Drawing.Point(0, 224);
+            this.searchedModName_.Name = "searchedModName_";
+            this.searchedModName_.Size = new System.Drawing.Size(149, 35);
+            this.searchedModName_.TabIndex = 1;
+            this.searchedModName_.Text = "Mod Name";
+            // 
+            // modPicture
+            // 
+            this.modPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPicture.Location = new System.Drawing.Point(6, 26);
+            this.modPicture.Name = "modPicture";
+            this.modPicture.Size = new System.Drawing.Size(405, 195);
+            this.modPicture.TabIndex = 0;
+            this.modPicture.TabStop = false;
             // 
             // contextMenuStrip1
             // 
@@ -358,84 +586,72 @@
             this.viewModToolStripMenuItem.Text = "View Mod";
             this.viewModToolStripMenuItem.Click += new System.EventHandler(this.viewMod_Click);
             // 
-            // searchModButton_
-            // 
-            this.searchModButton_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.searchModButton_.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchModButton_.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchModButton_.Location = new System.Drawing.Point(1160, 22);
-            this.searchModButton_.Margin = new System.Windows.Forms.Padding(20, 10, 10, 10);
-            this.searchModButton_.Name = "searchModButton_";
-            this.searchModButton_.Size = new System.Drawing.Size(254, 38);
-            this.searchModButton_.TabIndex = 3;
-            this.searchModButton_.Text = "Search";
-            this.searchModButton_.UseVisualStyleBackColor = false;
-            this.searchModButton_.Click += new System.EventHandler(this.searchModButton__Click);
-            // 
-            // filterBox
-            // 
-            this.filterBox.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filterBox.FormattingEnabled = true;
-            this.filterBox.ItemHeight = 25;
-            this.filterBox.Location = new System.Drawing.Point(1160, 90);
-            this.filterBox.Margin = new System.Windows.Forms.Padding(20, 20, 10, 20);
-            this.filterBox.Name = "filterBox";
-            this.filterBox.Size = new System.Drawing.Size(254, 304);
-            this.filterBox.TabIndex = 4;
-            this.filterBox.SelectedIndexChanged += new System.EventHandler(this.filterBox_SelectedIndexChanged);
-            // 
-            // viewMod
-            // 
-            this.viewMod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.viewMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewMod.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewMod.Location = new System.Drawing.Point(1160, 428);
-            this.viewMod.Margin = new System.Windows.Forms.Padding(20, 14, 10, 10);
-            this.viewMod.Name = "viewMod";
-            this.viewMod.Size = new System.Drawing.Size(254, 88);
-            this.viewMod.TabIndex = 1;
-            this.viewMod.Text = "View Mod";
-            this.viewMod.UseVisualStyleBackColor = false;
-            this.viewMod.Click += new System.EventHandler(this.viewMod_Click);
-            // 
             // tabPage2
             // 
+            this.tabPage2.AllowDrop = true;
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.tabPage2.Controls.Add(this.clearMods);
             this.tabPage2.Controls.Add(this.feedBackThing);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.clearMods);
+            this.tabPage2.Controls.Add(this.removeMod);
             this.tabPage2.Controls.Add(this.feedbackMyMods);
             this.tabPage2.Controls.Add(this.checkT);
-            this.tabPage2.Controls.Add(this.removeMod);
             this.tabPage2.Controls.Add(this.modList);
-            this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.pictureBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 31);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1493, 614);
+            this.tabPage2.Size = new System.Drawing.Size(1493, 611);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "My Mods";
+            // 
+            // feedBackThing
+            // 
+            this.feedBackThing.Location = new System.Drawing.Point(1199, 422);
+            this.feedBackThing.Name = "feedBackThing";
+            this.feedBackThing.Size = new System.Drawing.Size(239, 86);
+            this.feedBackThing.TabIndex = 6;
+            this.feedBackThing.Text = "";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1206, 29);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(225, 77);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Install New Mod";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // clearMods
             // 
             this.clearMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.clearMods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearMods.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearMods.Location = new System.Drawing.Point(1199, 242);
+            this.clearMods.Location = new System.Drawing.Point(1206, 231);
             this.clearMods.Name = "clearMods";
-            this.clearMods.Size = new System.Drawing.Size(242, 77);
+            this.clearMods.Size = new System.Drawing.Size(225, 77);
             this.clearMods.TabIndex = 7;
             this.clearMods.Text = "Clear all Mods";
             this.clearMods.UseVisualStyleBackColor = false;
             this.clearMods.Click += new System.EventHandler(this.clearMods_Click);
             // 
-            // feedBackThing
+            // removeMod
             // 
-            this.feedBackThing.Location = new System.Drawing.Point(1199, 436);
-            this.feedBackThing.Name = "feedBackThing";
-            this.feedBackThing.Size = new System.Drawing.Size(236, 86);
-            this.feedBackThing.TabIndex = 6;
-            this.feedBackThing.Text = "";
+            this.removeMod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.removeMod.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.removeMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeMod.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeMod.Location = new System.Drawing.Point(1206, 131);
+            this.removeMod.Name = "removeMod";
+            this.removeMod.Size = new System.Drawing.Size(225, 77);
+            this.removeMod.TabIndex = 4;
+            this.removeMod.Text = "Remove Selected Mod\r\n";
+            this.removeMod.UseVisualStyleBackColor = false;
+            this.removeMod.Click += new System.EventHandler(this.removeMod_Click);
             // 
             // feedbackMyMods
             // 
@@ -450,22 +666,8 @@
             // 
             this.checkT.Location = new System.Drawing.Point(54, 191);
             this.checkT.Name = "checkT";
-            this.checkT.Size = new System.Drawing.Size(1087, 29);
+            this.checkT.Size = new System.Drawing.Size(1087, 31);
             this.checkT.TabIndex = 2;
-            // 
-            // removeMod
-            // 
-            this.removeMod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.removeMod.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.removeMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeMod.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeMod.Location = new System.Drawing.Point(1199, 136);
-            this.removeMod.Name = "removeMod";
-            this.removeMod.Size = new System.Drawing.Size(242, 77);
-            this.removeMod.TabIndex = 4;
-            this.removeMod.Text = "Remove Selected Mod\r\n";
-            this.removeMod.UseVisualStyleBackColor = false;
-            this.removeMod.Click += new System.EventHandler(this.removeMod_Click);
             // 
             // modList
             // 
@@ -478,24 +680,12 @@
             this.modList.TabIndex = 3;
             this.modList.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1196, 29);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(242, 77);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Install New Mod";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1199, 7);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(1199, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(239, 515);
+            this.pictureBox1.Size = new System.Drawing.Size(239, 498);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -511,10 +701,10 @@
             this.tabPage1.Controls.Add(this.autoSteam);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 31);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1493, 614);
+            this.tabPage1.Size = new System.Drawing.Size(1493, 611);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Initial Setup";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -544,7 +734,7 @@
             // 
             this.pathName.Location = new System.Drawing.Point(112, 323);
             this.pathName.Name = "pathName";
-            this.pathName.Size = new System.Drawing.Size(1070, 29);
+            this.pathName.Size = new System.Drawing.Size(1070, 31);
             this.pathName.TabIndex = 1;
             this.pathName.TextChanged += new System.EventHandler(this.pathName_TextChanged);
             // 
@@ -623,23 +813,35 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.AllowDrop = true;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.modCreationTools);
             this.tabControl1.Controls.Add(this.Feedback);
-            this.tabControl1.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.HotTrack = true;
             this.tabControl1.Location = new System.Drawing.Point(-2, -2);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1501, 649);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
+            // rotatingCircle
+            // 
+            this.rotatingCircle.Location = new System.Drawing.Point(345, 371);
+            this.rotatingCircle.Name = "rotatingCircle";
+            this.rotatingCircle.Size = new System.Drawing.Size(53, 50);
+            this.rotatingCircle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rotatingCircle.TabIndex = 1;
+            this.rotatingCircle.TabStop = false;
+            // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
@@ -662,6 +864,11 @@
             this.modCreationTools.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.modPicture)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -669,6 +876,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rotatingCircle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -694,10 +902,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.RichTextBox searchModBox;
-        private System.Windows.Forms.ListBox modSearchNames;
         private System.Windows.Forms.Button searchModButton_;
-        private System.Windows.Forms.ListBox filterBox;
-        private System.Windows.Forms.Button viewMod;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button clearMods;
         private System.Windows.Forms.RichTextBox feedBackThing;
@@ -721,6 +926,24 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem viewModToolStripMenuItem;
+        private System.Windows.Forms.ListBox filterBox;
+        private System.Windows.Forms.ComboBox subFilterBox;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox modSearchNames;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label searchedModAuthor;
+        private System.Windows.Forms.Label searchedModName_;
+        private System.Windows.Forms.PictureBox modPicture;
+        private System.Windows.Forms.RadioButton sortAlph;
+        private System.Windows.Forms.RadioButton sortRecent;
+        private System.Windows.Forms.Label searchedModSubtype;
+        private System.Windows.Forms.Label searchedModType;
+        private System.Windows.Forms.Label searchedModDLNum;
+        private System.Windows.Forms.Label searchedModReplaces;
+        private System.Windows.Forms.Label modSearchedStatus;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox rotatingCircle;
     }
 }
 

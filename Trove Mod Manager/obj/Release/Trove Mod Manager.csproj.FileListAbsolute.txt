@@ -13,3 +13,4 @@ C:\Users\Dan\Documents\Visual Studio 2015\Projects\Trove Mod Manager\Trove Mod M
 C:\Users\Dan\Documents\Visual Studio 2015\Projects\Trove Mod Manager\Trove Mod Manager\bin\Release\Newtonsoft.Json.xml
 C:\Users\Dan\Documents\Visual Studio 2015\Projects\Trove Mod Manager\Trove Mod Manager\obj\Release\Trove_Mod_Manager.Form3.resources
 C:\Users\Dan\Documents\Visual Studio 2015\Projects\Trove Mod Manager\Trove Mod Manager\obj\Release\Trove_Mod_Manager.Form4.resources
+C:\Users\Dan\Documents\Visual Studio 2015\Projects\Trove Mod Manager\Trove Mod Manager\obj\Release\Trove_Mod_Manager.Form5.resources

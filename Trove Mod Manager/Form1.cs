@@ -23,22 +23,30 @@ namespace Trove_Mod_Manager
 {
     public partial class Form1 : Form 
     {
-        
+
 
         public Form1()
         {
             InitializeComponent();
             logwriter("initialize");
-           
+
+
             //
             //Writes line for exiting program...
             //
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
 
             string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+            rotatingCircle.Image = null;
+            
+            
+            rotatingCircle.Visible = false;
             // Sets debug feedback to not be visible. This is located in "My Mods" under remove button for further use
-            feedBackThing.Visible = false;
+            feedBackThing.Visible = true;
             checkT.Visible = false;
+
+            //Set original search settings to search by most recent
+            sortRecent.Checked = true;
 
             //
             //Centers Text Boxes
@@ -129,32 +137,93 @@ namespace Trove_Mod_Manager
             List<Obj> jsonArray = JsonConvert.DeserializeObject<List<Obj>>(File.ReadAllText(exeDirect + "\\" + "Data.txt"));
             List<string> nameString = new List<string>();
             List<string> typeString = new List<string>();
+            List<string> subtypeString = new List<string>();
+            TreeView typeTree = new TreeView();
+            
+
+
             typeString.Add("ALL");
-            foreach (Obj obj in jsonArray)
+            subtypeString.Add("ALL");
+            
+            try
             {
-                if (!typeString.Contains(obj.type))
+                foreach (Obj obj in jsonArray)
                 {
-                    typeString.Add(obj.type);
+                    if (!typeString.Contains(obj.type))
+                    {
+                        typeString.Add(obj.type);
+                        //treeView1.Nodes.Add(obj.type);
+                    }
                 }
             }
+            catch {
+
+            }
             typeString.Sort();
+            try
+            {
+                foreach (Obj obj in jsonArray)
+                {
+                    
+                        if (!subtypeString.Contains(obj.subtype))
+                        {
+                            if(obj.subtype != "")
+                            subtypeString.Add(obj.subtype);
+                            
+                        }
+                    
+                }
+            }
+            catch
+            {
+
+            }
+
+
+            subtypeString.Sort();
+            
+            subFilterBox.DataSource = subtypeString;
             filterBox.DataSource = typeString;
 
+
+
+
             
-            foreach (Obj obj in jsonArray)
+            try
+            {
+                foreach (Obj obj in jsonArray)
                 {
+                    
+                    
                     nameString.Add(obj.name);
+                    
+                   
                 }
                 List<string> nameReverse = nameString;
                 nameReverse.Reverse();
-                modSearchNames.DataSource = nameReverse;
+                
+                 modSearchNames.DataSource = nameReverse;
+                
+                
+                
+                
 
+                    
+                    }
+            catch { }
             
-
+            
             
 
         }
+        public class modInfo
+        {
+            public string name;
+            public string totaldownloads;
 
+
+
+        }
         
         public class Obj
         {
@@ -246,11 +315,6 @@ namespace Trove_Mod_Manager
             
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -323,12 +387,16 @@ namespace Trove_Mod_Manager
 
                 try
                 {
-                    string[] dirNames = System.IO.Directory.GetDirectories(storageName + "\\" + zipFileName);
+                    string[] dirNames = System.IO.Directory.GetDirectories(storageName + "\\" + zipFileName,"*",SearchOption.AllDirectories);
 
                     foreach (string dirName in dirNames)
                     {
-                        string dirNameEdit = dirName.Remove(0, dirName.LastIndexOf("\\") + 1);
+                        string dirNameEdit = dirName.Remove(0, dirName.LastIndexOf(zipFileName) + zipFileName.Length + 1);
+                        
+                        
+                        
                         string[] dirFiles = System.IO.Directory.GetFiles(dirName);
+                        
                         foreach (string d in dirFiles)
                         {
                             if (!System.IO.Directory.Exists(pathName.Text + "\\" + dirNameEdit + "\\" + "override"))
@@ -350,6 +418,7 @@ namespace Trove_Mod_Manager
                             logwriter("Copying " + mFileName + "  to  " + overFileName);
                             logwriter("Copy Complete : " + mFileName);
                         }
+                        
                     }
 
 
@@ -884,77 +953,168 @@ namespace Trove_Mod_Manager
 
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
+            try
+            {
+                string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
+                List<Obj> jsonArray = JsonConvert.DeserializeObject<List<Obj>>(File.ReadAllText(exeDirect + "\\" + "Data.txt"));
+                List<string> nameString = new List<string>();
+                foreach (Obj obj in jsonArray)
+                {
+                    nameString.Add(obj.name);
+                }
+                int nameIndex = nameString.IndexOf(modSearchNames.SelectedValue.ToString());
+
+                //
+                //Display mod info
+                //
+
+                //Display Name
+                if (jsonArray[nameIndex].name.Length > 26)
+                    searchedModName_.Text = jsonArray[nameIndex].name.Remove(26) + "...";
+                else
+                    searchedModName_.Text = jsonArray[nameIndex].name;
+
+                //Display Author
+                searchedModAuthor.Text = "Created by " + jsonArray[nameIndex].author;
+
+                //Display Type
+                searchedModType.Text = "Type : " + jsonArray[nameIndex].type;
+
+                //Display SubType
+                if (jsonArray[nameIndex].subtype == "")
+                    searchedModSubtype.Text = "";
+                else
+                    searchedModSubtype.Text = "For " + jsonArray[nameIndex].subtype;
+
+                //Display Total Downloads
+                searchedModDLNum.Text = "Downloads : " + jsonArray[nameIndex].totaldownloads;
+
+                //Display Replaces
+                if (jsonArray[nameIndex].replaces == "")
+                    searchedModReplaces.Text = "";
+                else
+                    searchedModReplaces.Text = "Replaces : " + jsonArray[nameIndex].replaces;
+
+                //Display status
+                if (jsonArray[nameIndex].status2 == "")
+                    modSearchedStatus.Text = "";
+                else
+                    modSearchedStatus.Text = "Status : " + jsonArray[nameIndex].status2;
+
+                //Display Image
+                try
+                {
+                    modPicture.Load(@"https://www.trovesaurus.com/" + jsonArray[nameIndex].image);
+                    modPicture.SizeMode = PictureBoxSizeMode.CenterImage;
+                    modPicture.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                catch
+                { }
+                // Form3 form3 = new Form3(jsonArray[nameIndex].name, jsonArray[nameIndex].author, jsonArray[nameIndex].type, jsonArray[nameIndex].subtype, jsonArray[nameIndex].totaldownloads, jsonArray[nameIndex].image, jsonArray[nameIndex].id, jsonArray[nameIndex].downloads[0], jsonArray[nameIndex].replaces);
+                //form3.Show();
+            }
+            catch
+            {
+                logwriter("Could not view mod as there is nothing selected");
+            }
         }
 
         private void viewMod_Click(object sender, EventArgs e)
         {
-            string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
-           
-            List<Obj> jsonArray = JsonConvert.DeserializeObject<List<Obj>>(File.ReadAllText(exeDirect + "\\" + "Data.txt"));
-            List<string> nameString = new List<string>();
-            foreach (Obj obj in jsonArray)
+            try
             {
-                nameString.Add(obj.name);
-            }
-            int nameIndex = nameString.IndexOf(modSearchNames.SelectedValue.ToString());
+                string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
-            Form3 form3 = new Form3(jsonArray[nameIndex].name, jsonArray[nameIndex].author, jsonArray[nameIndex].type, jsonArray[nameIndex].subtype, jsonArray[nameIndex].totaldownloads, jsonArray[nameIndex].image, jsonArray[nameIndex].id, jsonArray[nameIndex].downloads[0], jsonArray[nameIndex].replaces);
-            form3.Show();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void searchModButton__Click(object sender, EventArgs e)
-        {
-            string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
-            string searchBoxTest = "";
-            if (searchModBox.Text == "Search For a Name...")
-            {
-                searchBoxTest = "";    
-            }
-            else
-            {
-                searchBoxTest = searchModBox.Text;
-
-            }
-            string searchVal = searchBoxTest;
-            List<Obj> jsonArray = JsonConvert.DeserializeObject<List<Obj>>(File.ReadAllText(exeDirect + "\\" + "Data.txt"));
-            
-            List<string> nameString = new List<string>();
-            List<string> nameStringNew = new List<string>();
-            foreach (Obj obj in jsonArray)
-            {
-                if (filterBox.SelectedValue.ToString() == "ALL")
+                List<Obj> jsonArray = JsonConvert.DeserializeObject<List<Obj>>(File.ReadAllText(exeDirect + "\\" + "Data.txt"));
+                List<string> nameString = new List<string>();
+                foreach (Obj obj in jsonArray)
                 {
                     nameString.Add(obj.name);
                 }
+                int nameIndex = nameString.IndexOf(modSearchNames.SelectedValue.ToString());
+
+                Form3 form3 = new Form3(jsonArray[nameIndex].name, jsonArray[nameIndex].author, jsonArray[nameIndex].type, jsonArray[nameIndex].subtype, jsonArray[nameIndex].totaldownloads, jsonArray[nameIndex].image, jsonArray[nameIndex].id, jsonArray[nameIndex].downloads[0], jsonArray[nameIndex].replaces);
+                form3.Show();
+            }
+            catch {
+                logwriter("Could not view mod as there is nothing selected");
+            }
+        }
+
+        
+
+        private void searchModButton__Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+                string searchBoxTest = "";
+                if (searchModBox.Text == "Search For a Name...")
+                {
+                    searchBoxTest = "";
+                }
                 else
                 {
-                    if (obj.type == filterBox.SelectedValue.ToString())
+                    searchBoxTest = searchModBox.Text;
+
+                }
+                string searchVal = searchBoxTest;
+                List<Obj> jsonArray = JsonConvert.DeserializeObject<List<Obj>>(File.ReadAllText(exeDirect + "\\" + "Data.txt"));
+
+                List<string> nameString = new List<string>();
+                List<string> nameStringNew = new List<string>();
+                foreach (Obj obj in jsonArray)
+                {
+                    if (filterBox.SelectedValue.ToString() == "ALL")
                     {
                         nameString.Add(obj.name);
                     }
+                    else
+                    {
+                        
+                        if (obj.type == filterBox.SelectedValue.ToString())
+                        {
+                            if (filterBox.SelectedValue.ToString() == "COSTUME")
+                            {
+                                if (subFilterBox.SelectedValue.ToString() == "ALL")
+                                    nameString.Add(obj.name);
+                                else if (obj.subtype == subFilterBox.SelectedValue.ToString())
+                                {
+                                    nameString.Add(obj.name);
+
+                                }
+                            }
+                            else
+                            {
+                                nameString.Add(obj.name);
+                            }
+                            
+                        }
+                    }
                 }
-            }
-          
-            foreach (string s in nameString)
-            {
-                string n = s.ToLower();
-                if (n.Contains(searchVal.ToLower()))
+
+                foreach (string s in nameString)
                 {
-                    nameStringNew.Add(s);
+                    string n = s.ToLower();
+                    if (n.Contains(searchVal.ToLower()))
+                    {
+                        nameStringNew.Add(s);
+                    }
                 }
+                List<string> nameReverse = nameStringNew;
+
+
+                nameReverse.Reverse();
+                if (sortAlph.Checked)
+                    nameReverse.Sort();
+
+                modSearchNames.DataSource = nameReverse;
             }
-            List<string> nameReverse = nameStringNew;
-            
-            
-            nameReverse.Reverse();
-            
-            modSearchNames.DataSource = nameReverse;
+            catch
+            {
+                logwriter("could not search as there is no list to search ");
+            }
         }
 
         private void searchModBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -1051,6 +1211,326 @@ namespace Trove_Mod_Manager
                 e.Handled = true;
                 e.SuppressKeyPress = true;
 
+            }
+        }
+
+        void dragNDrop_DragDrop(object sender, DragEventArgs e)
+        {
+            string file = e.Data.GetData(DataFormats.FileDrop).ToString();
+            feedBackThing.Text = file;
+            /*
+            string file = (string)e.Data.GetData();
+
+            //
+            // Installing mod via user dialog
+            //
+
+
+            try
+            {
+                logwriter("DragDrop Event occuring");
+
+                string zipFile = (string)e.Data.GetData(DataFormats.FileDrop);
+
+                
+
+                logwriter("User .zip path = " + zipFile);
+
+                string zipFileName = zipFile.Remove(0, zipFile.LastIndexOf("\\") + 1);
+                zipFileName = zipFileName.Remove(zipFileName.Length - 4, 4);
+
+                //IGNORE-For debug 
+                //  {
+                checkT.Text = zipFileName;
+                checkT.Enabled = false;
+                //  }
+
+                //restate the storage area
+                string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+                string storageName = exeDirect + "\\" + "Modlist";
+                logwriter("ModList Storage = " + storageName);
+
+
+                //
+                // Extracts from Zip File to modList Directory
+                //
+                if (!System.IO.Directory.Exists(storageName + "\\" + zipFileName))
+                {
+                    try
+                    {
+                        ZipFile.ExtractToDirectory(zipFile, storageName + "\\" + zipFileName);
+                        logwriter(zipFileName + " has been extracted to ModList");
+                    }
+                    catch
+                    {
+
+                    }
+                }
+                else
+                {
+                    System.IO.Directory.Delete(storageName + "\\" + zipFileName, true);
+                    logwriter(zipFileName + "already exists in " + storageName + "." + " Deleting " + storageName + "\\" + zipFileName + "...");
+                    ZipFile.ExtractToDirectory(zipFile, storageName + "\\" + zipFileName);
+                    logwriter(zipFileName + " has been extracted to ModList");
+                }
+
+                //
+                // Applies Files to corresponding overrides
+                //
+
+                try
+                {
+                    string[] dirNames = System.IO.Directory.GetDirectories(storageName + "\\" + zipFileName);
+
+                    foreach (string dirName in dirNames)
+                    {
+                        string dirNameEdit = dirName.Remove(0, dirName.LastIndexOf("\\") + 1);
+                        string[] dirFiles = System.IO.Directory.GetFiles(dirName);
+                        foreach (string d in dirFiles)
+                        {
+                            if (!System.IO.Directory.Exists(pathName.Text + "\\" + dirNameEdit + "\\" + "override"))
+                            {
+                                System.IO.Directory.CreateDirectory(pathName.Text + "\\" + dirNameEdit + "\\" + "override");
+                                logwriter("Created Directory : " + pathName.Text + "\\" + dirNameEdit + "\\" + "override");
+                            }
+                            string mFileName = System.IO.Path.GetFileName(d);
+                            string overFileName = System.IO.Path.Combine(pathName.Text + "\\" + dirNameEdit + "\\" + "override", mFileName);
+                            System.IO.File.Delete(overFileName);
+                            logwriter(mFileName + " in the override folder was deleted to be overwritten");
+                        }
+                        foreach (string d in dirFiles)
+                        {
+
+                            string mFileName = System.IO.Path.GetFileName(d);
+                            string overFileName = System.IO.Path.Combine(pathName.Text + "\\" + dirNameEdit + "\\" + "override", mFileName);
+                            System.IO.File.Copy(d, overFileName, true);
+                            logwriter("Copying " + mFileName + "  to  " + overFileName);
+                            logwriter("Copy Complete : " + mFileName);
+                        }
+                    }
+
+
+                    //Refresh ModList
+                    string[] modLister = System.IO.Directory.GetDirectories(storageName + "\\");
+
+                    for (int i = 0; i <= modLister.Length - 1; i++)
+                    {
+                        modLister[i] = modLister[i].Remove(0, modLister[i].LastIndexOf("\\") + 1);
+                    }
+                    modList.DataSource = modLister;
+                    //Feedback to User
+                    feedbackMyMods.ForeColor = Color.Blue;
+                    feedbackMyMods.Text = zipFileName + " has been added to My Mods";
+                }
+                catch
+                {
+                    logwriter("Dialogue closed");
+                }
+            }
+            catch
+            {
+                logwriter("Dialogue closed");
+            }
+
+
+            //
+            //
+            //
+            //
+            //
+            //
+            */
+
+        }
+
+        private void dragNDrop_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                e.Effect = DragDropEffects.Copy;
+        }
+
+        private void dragNDrop_MouseDown(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+    
+       
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Show();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Show();
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
+
+        private void sortAlph_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sortAlph.Checked)
+            {
+                string[] array = new string[modSearchNames.Items.Count];
+                modSearchNames.Items.CopyTo(array, 0);
+                List<string> list = array.ToList<string>();
+                list.Sort();
+                modSearchNames.DataSource = list;
+            }
+        }
+
+        private void sortRecent_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sortRecent.Checked)
+            {
+                searchModButton__Click(sender,e);
+            }
+        }
+
+        private void button5_Click_2(object sender, EventArgs e)
+        {
+
+            try
+            {
+                
+
+                string exeDirect = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+                rotatingCircle.Image = null;
+                rotatingCircle.Image = Image.FromFile(exeDirect + "\\Resources\\rotatingCircle.png");
+                rotatingCircle.SizeMode = PictureBoxSizeMode.StretchImage;
+                
+                rotatingCircle.Visible = true;
+
+                List<Obj> jsonArray = JsonConvert.DeserializeObject<List<Obj>>(File.ReadAllText(exeDirect + "\\" + "Data.txt"));
+                List<string> nameString = new List<string>();
+                foreach (Obj obj in jsonArray)
+                {
+                    nameString.Add(obj.name);
+                }
+                int nameIndex = nameString.IndexOf(modSearchNames.SelectedValue.ToString());
+
+
+
+                
+                string txtFileName = exeDirect + "\\" + "ModLoader.txt";
+
+                StreamReader reader = new StreamReader(txtFileName, false);
+                string liveFolderLoc = reader.ReadLine();
+                reader.Close();
+
+
+                string id = jsonArray[nameIndex].id;
+                Downloads dl= jsonArray[nameIndex].downloads[0];
+                string fileID = dl.fileid;
+
+
+                
+
+                if (!(liveFolderLoc == null))
+                {
+
+                    string zipFileName = searchedModName_.Text;
+                    using (WebClient wc = new WebClient())
+                    {
+
+                        string zipFile = @"http://www.Trovesaurus.com/mod.php?id=" + id + "&download=" + fileID;
+
+
+                        wc.DownloadFile(zipFile, exeDirect + "\\ModList" + "\\" + searchedModName_.Text + ".zip");
+
+
+                    }
+
+                    string zipLoc = exeDirect + "\\Modlist\\" + searchedModName_.Text + ".zip";
+
+
+
+                    string storageName = exeDirect + "\\" + "Modlist";
+
+
+
+                    //
+                    // Extracts from Zip File to modList Directory
+                    //
+                    if (!System.IO.Directory.Exists(storageName + "\\" + zipFileName))
+                    {
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(zipLoc, storageName + "\\" + zipFileName);
+                        }
+                        catch
+                        {
+                            
+                        }
+                    }
+                    else
+                    {
+                        System.IO.Directory.Delete(storageName + "\\" + zipFileName, true);
+                        ZipFile.ExtractToDirectory(zipLoc, storageName + "\\" + zipFileName);
+                    }
+                    try
+                    {
+                        string[] dirNames = System.IO.Directory.GetDirectories(storageName + "\\" + zipFileName, "*", SearchOption.AllDirectories);
+
+                        //
+                        // Applies Files to corresponding overrides
+                        //
+
+                        foreach (string dirName in dirNames)
+                        {
+                            string dirNameEdit = dirName.Remove(0, dirName.LastIndexOf(zipFileName) + zipFileName.Length + 1);
+                            string[] dirFiles = System.IO.Directory.GetFiles(dirName);
+                            foreach (string d in dirFiles)
+                            {
+                                if (!System.IO.Directory.Exists(liveFolderLoc + "\\" + dirNameEdit + "\\" + "override"))
+                                {
+                                    System.IO.Directory.CreateDirectory(liveFolderLoc + "\\" + dirNameEdit + "\\" + "override");
+                                }
+                                string mFileName = System.IO.Path.GetFileName(d);
+                                string overFileName = System.IO.Path.Combine(liveFolderLoc + "\\" + dirNameEdit + "\\" + "override", mFileName);
+                                System.IO.File.Delete(overFileName);
+                            }
+                            foreach (string d in dirFiles)
+                            {
+
+                                string mFileName = System.IO.Path.GetFileName(d);
+                                string overFileName = System.IO.Path.Combine(liveFolderLoc + "\\" + dirNameEdit + "\\" + "override", mFileName);
+                                System.IO.File.Copy(d, overFileName, true);
+                            }
+                        }
+
+                       // modDLFeedback.ForeColor = Color.Green;
+                       // modDLFeedback.Text = "Mod Installed";
+
+                    }
+                    catch
+                    {
+                       
+                        // modDLFeedback.Text = "couldn't Download";
+                    }
+
+
+
+                }
+                else
+                {
+                   // modDLFeedback.ForeColor = Color.Red;
+                    //modDLFeedback.Text = "Choose a Live Path";
+                }
+
+                rotatingCircle.Visible = false;
+            }
+            catch
+            {
+                
+                //modDLFeedback.ForeColor = Color.Red;
+                //modDLFeedback.Text = "Could not connect to Trovesaurus";
             }
         }
     }

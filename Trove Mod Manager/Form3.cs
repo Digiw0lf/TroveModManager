@@ -165,6 +165,7 @@ namespace Trove_Mod_Manager
                         foreach (string dirName in dirNames)
                         {
                             string dirNameEdit = dirName.Remove(0, dirName.LastIndexOf("\\") + 1);
+                            
                             string[] dirFiles = System.IO.Directory.GetFiles(dirName);
                             foreach (string d in dirFiles)
                             {
